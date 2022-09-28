@@ -13,7 +13,10 @@ const TodoInput: React.FC = () => {
     };
 
     const onAddTodo = () => {
-        if (input.length > 0) dispatch(addTodo(input));
+        if (input.length > 0){
+            dispatch(addTodo(input))
+            setInput('')
+        }    
     };
 
     return (
